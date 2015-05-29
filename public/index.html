@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="bg"></div>
+  <canvas id="canvas"></canvas>
+  <div id="log"></div>
+  <div id="chat">
+    <form action="" id="chat-form">
+      <input type="text" id="chat-text-input">
+      <button type="submit" id="chat-submit-button">
+        Send
+      </button>
+    </form>
+  </div>
+   
+  <div id="loader">
+    <img src="img/loader.svg" alt="Loading now..." class="loader__loader-image">
+  </div>
+  <div id="login-form">
+  </div>
+</body>
+</html>
