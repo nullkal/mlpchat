@@ -1,0 +1,161 @@
+body {
+  background: #9cf;
+  overflow: hidden;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 64, 128, 0.3);
+  z-index: 99;
+}
+
+.loader__loader-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 25%;
+  height: 25%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.scene {
+  display: none;
+}
+
+#login-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 40em;
+  height: 140px;
+  background: #093;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px #030;
+}
+
+#login-form__screen-name {
+  position: absolute;
+  left: 50%;
+  top: 16px;
+  transform: translate(-50%, 0);
+  width: 80%;
+  border: none;
+  font-size: 32px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  color: #060;
+}
+#login-form__screen-name:focus {
+  outline: none;
+}
+#login-form__screen-name::placeholder {
+  color: #5a5;
+}
+
+#login-form__login-button {
+  position: absolute;
+  left: 50%;
+  bottom: 19px;
+  transform: translate(-50%, 0);
+  border: none;
+  background: #063;
+  border-radius: 8px;
+  padding: 9px 24px;
+  box-shadow: 0 1px 0 #040;
+  text-shadow: -1px -1px 0 #3a6;
+  color: #fff;
+}
+#login-form__login-button:focus {
+  outline: none;
+}
+#login-form__login-button:active {
+  box-shadow: 0 1px 0 #063;
+  bottom: 16px;
+}
+
+#chat-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(
+         rgba(0, 168, 0, 0.5),
+    10%, rgba(0, 168, 0, 1  ),
+         rgba(0, 168, 0, 1  ));
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#chat-text-input {
+  display: block;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: 50%;
+  border: 1px solid #393;
+  padding: 2px 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  transform: translate(0, -50%);
+  box-sizing: border-box;
+}
+#chat-text-input:focus {
+  outline: none;
+}
+
+#chat-submit-button {
+  display: block;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  width: 9%;
+  padding: 2px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  background: #063;
+  transform: translate(0, -50%);
+  color: #fff;
+  text-shadow: -1px -1px 0px #3a6;
+  box-shadow: 0 1px 0 #040;
+
+}
+#chat-submit-button:active {
+  transform: translate(0, -40%);
+  box-shadow: 0 1px 0 #063;
+}
+#chat-submit-button:focus {
+  outline: none;
+}
+
+#messages {
+  position: absolute;
+  bottom: 11%;
+  right: 0;
+  width: 25em;
+}
+
+.messages__msg {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.4em 0.8em;
+  margin: 0.5em 1em;
+  border-radius: 4px;
+  color: #fff;
+}
