@@ -140,9 +140,9 @@ $(function() {
       for (var i in scene_chat.players) {
         if (scene_chat.players[i].state == 'moving') {
           if (scene_chat.players[i].flipped) {
-            scene_chat.players[i].x -= 0.02;
+            scene_chat.players[i].x -= 0.03;
           } else {
-            scene_chat.players[i].x += 0.02;
+            scene_chat.players[i].x += 0.03;
           }
         }
         scene_chat.players[i].refresh();
